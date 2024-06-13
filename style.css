@@ -1,0 +1,162 @@
+*{
+ padding: 0;
+ margin:0;
+ box-sizing: border-box;
+ text-decoration:none;
+}
+.image img{
+ width:80%;
+ HEIGHT:80%;
+ margin-top: 12px;
+ border-radius: 50%;
+}
+.logo, .statement{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.linebar hr{
+ border: #ffff;
+ margin-top: 20px;
+ margin-bottom: 10px;
+ width: 270px;
+ height: 3px;
+ background-color: #ffff;
+}
+.container{
+ display:flex;
+ justify-content: center;
+}
+.hamburger{
+  padding: 15px;
+  font-size: 30px;
+  color: #444D5E;
+  background-color: #9a8c8c;
+  display: flex;
+  justify-content: center;
+}
+.contact{
+ display: none;
+ align-items: center;
+ padding: 10px;
+ justify-content: space-between;
+ background-color: #687691;
+ color: #ffff;
+ height:45px;
+}
+.statement p{
+ width:72%;
+ text-align: left;
+}
+.main{
+ background-color: #444D5E;
+ color: #ffff;
+ width:35%;
+ padding-left: 30px;
+ padding-bottom: 30px;
+}
+
+
+.statement, .logo{
+ opacity: 0;
+ transform: translateY(100px); 
+ animation: slideIn 0.9s ease forwards;
+}
+
+@keyframes slideIn {
+ from {
+     opacity: 0;
+     transform: translateY(100px);
+ }
+ to {
+     opacity: 1;
+     transform: translateY(0);
+ }}
+ .Projects a {
+  transition: font-size 0.3s ease;
+}
+.Projects a:hover {
+ font-size: 1.5em;
+}
+ .experience li{
+  transition: font-size 0.3s ease;
+}
+.experience li:hover {
+ font-size: 1.5em;
+}
+ .education{
+  transition: font-size 0.3s ease;
+}
+.education :hover  {
+ font-size: 1.5em;
+}
+
+@keyframes rotate {
+ 0% {
+   transform: rotate(-360deg); 
+ }
+ 100% {
+   transform: rotate(0deg); 
+ }
+}
+
+.skills {
+ animation: rotate 0.4s linear ; 
+}
+.same {
+ position: relative; 
+ right: -100%; 
+ animation: sliding 1s forwards;
+}
+
+@keyframes sliding {
+ 0% {
+   right: -100%; 
+ }
+ 100% {
+   right: 0; 
+ }
+}
+
+
+.aside{
+ 
+ width:65%;
+ padding-left: 80px;
+ padding-bottom: 30px;
+ padding-right: 40px;
+}
+
+.same{
+ background-color: #FEEECA;
+ color: #444D5E;
+ margin-bottom: 5px;
+ margin-top: 10px;
+}
+.skills h2{
+ margin-bottom: 10px;
+}
+/* media queries */
+@media screen and(maxwidth:800px){
+  
+.image img {
+    width:40%;
+    height: 40%;
+    border-radius:50%;
+}
+}
+@media screen and(maxwidth:800px){
+  .contact{
+    display: flex;
+justify-content: center;
+
+}
+.hamburger{
+  padding: 10px;
+}}
+
+@media screen and(maxwidth:800px){
+  .experience li:first-child{
+    width:50%;
+
+  }} 
